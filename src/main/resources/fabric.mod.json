@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "snow-and-shadows",
+  "version": "${version}",
+  "name": "Snow & Shadows",
+  "description": "Mashup of Chasing Tails and Lucy Got Problems in Minecraft.",
+  "authors": [
+    "Melty Creator"
+  ],
+  "contact": {
+    "homepage": "https://melty.gg"
+  },
+  "license": "All Rights Reserved",
+  "icon": "assets/snowshadows/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.snowshadows.SnowAndShadows"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "june",
+    "displayName": "June",
+    "sourceGame": "chasing_tails",
+    "dimension": "snow_town",
+    "rpaSource": "images.rpa",
+    "rpaPath": "images/sprites/June/june_base.png",
+    "dialogueLines": [
+      "Oh, hi there! Are you new here too?",
+      "This town is... quiet. Maybe too quiet.",
+      "Watch out for the house on the hill. Strange things happen there at night.",
+      "Have you seen Rin around? She's always sneaking up on me..."
+    ],
+    "spawnOffset": [0, 0, 5],
+    "tradeItem": "ghost_lantern"
+  },
+  {
+    "id": "rin",
+    "displayName": "Rin",
+    "sourceGame": "chasing_tails",
+    "dimension": "snow_town",
+    "rpaSource": "images.rpa",
+    "rpaPath": "images/sprites/Rin/rin.png",
+    "dialogueLines": [
+      "*appears behind you* Boo~!",
+      "Ehehe~ Did I scare you? I'm Rin!",
+      "This tail? It's 100% real! Want to touch it?",
+      "June is so fun to tease~ She gets so flustered!"
+    ],
+    "spawnOffset": [15, 0, -10],
+    "tradeItem": "fox_tail"
+  },
+  {
+    "id": "lucy",
+    "displayName": "Lucy",
+    "sourceGame": "lucy_got_problems",
+    "dimension": "elven_forest",
+    "rpaSource": "images.rpa",
+    "rpaPath": "images/sprites/Lucy/lucy_patch_normal.png",
+    "dialogueLines": [
+      "Hey! I'm Lucy, spy extraordinaire! ...Don't tell anyone.",
+      "I was sent here on a Very Important Mission! What was it again...?",
+      "Have you seen any cute elves around? Asking for... research purposes.",
+      "Priestess Tiamat is going to be SO mad if I mess this up..."
+    ],
+    "spawnOffset": [0, 0, 5],
+    "tradeItem": "succubus_scroll"
+  },
+  {
+    "id": "ellie",
+    "displayName": "Ellie",
+    "sourceGame": "lucy_got_problems",
+    "dimension": "elven_forest",
+    "rpaSource": "images.rpa",
+    "rpaPath": "images/sprites/Ellie/ellie_dress_handdn.png",
+    "dialogueLines": [
+      "O-oh! A visitor! Welcome to our forest!",
+      "I'm training to become a Forest Guardian someday!",
+      "The forest is usually peaceful... but lately something feels different.",
+      "Would you like some elvish tea? I just brewed a fresh pot!"
+    ],
+    "spawnOffset": [-10, 0, 15],
+    "tradeItem": "elven_bow"
+  },
+  {
+    "id": "thea",
+    "displayName": "Thea",
+    "sourceGame": "lucy_got_problems",
+    "dimension": "elven_forest",
+    "rpaSource": "images.rpa",
+    "rpaPath": "images/sprites/Thea/thea1.png",
+    "dialogueLines": [
+      "Halt! State your business in the Elven Forest.",
+      "I am Thea, Forest Guardian. The forest is under my protection.",
+      "Rules exist for a reason. Follow them or face the consequences.",
+      "...That succubus has been causing trouble again, hasn't she?"
+    ],
+    "spawnOffset": [10, 0, -15],
+    "tradeItem": "elven_bow"
+  }
+]

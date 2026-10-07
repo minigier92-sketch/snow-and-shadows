@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ghost_lantern",
+    "displayName": "Ghost Lantern",
+    "sourceGame": "chasing_tails",
+    "dimension": "snow_town",
+    "maxStackSize": 1,
+    "rarity": "UNCOMMON",
+    "lightLevel": 14,
+    "description": "A lantern that glows with an eerie ghostly light. Reveals hidden paths when held.",
+    "obtainedFrom": "june",
+    "ability": "right_click_portal_igniter"
+  },
+  {
+    "id": "fox_tail",
+    "displayName": "Kitsune Tail Charm",
+    "sourceGame": "chasing_tails",
+    "dimension": "snow_town",
+    "maxStackSize": 1,
+    "rarity": "RARE",
+    "lightLevel": 0,
+    "description": "A fluffy charm from Rin. Grants speed in snowy biomes.",
+    "obtainedFrom": "rin",
+    "ability": "speed_boost_snow"
+  },
+  {
+    "id": "elven_bow",
+    "displayName": "Elven Forest Bow",
+    "sourceGame": "lucy_got_problems",
+    "dimension": "elven_forest",
+    "maxStackSize": 1,
+    "rarity": "RARE",
+    "lightLevel": 0,
+    "description": "A bow from the Elven Forest. Arrows fly true through dense foliage.",
+    "obtainedFrom": "ellie",
+    "ability": "ignore_leaves"
+  },
+  {
+    "id": "succubus_scroll",
+    "displayName": "Succubus Scroll",
+    "sourceGame": "lucy_got_problems",
+    "dimension": "elven_forest",
+    "maxStackSize": 16,
+    "rarity": "UNCOMMON",
+    "lightLevel": 5,
+    "description": "A scroll from the Legion of Darkness. Opens portals to the Elven Forest.",
+    "obtainedFrom": "lucy",
+    "ability": "right_click_portal_igniter"
+  }
+]

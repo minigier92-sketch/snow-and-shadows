@@ -1,0 +1,36 @@
+[
+  {
+    "id": "snow_town",
+    "displayName": "Snow Town",
+    "sourceGame": "chasing_tails",
+    "biome": "snowy_plains",
+    "skyColor": "#a0c4ff",
+    "fogColor": "#d0e8ff",
+    "waterColor": "#3d57a6",
+    "grassColor": "#e8f0ff",
+    "ambientLight": 0.6,
+    "hasCeiling": false,
+    "natural": true,
+    "portalFrameBlock": "minecraft:packed_ice",
+    "portalIgniter": "ghost_lantern",
+    "musicSource": "chasing_tails",
+    "description": "A small snowy town with a haunted house, from Chasing Tails"
+  },
+  {
+    "id": "elven_forest",
+    "displayName": "Elven Forest",
+    "sourceGame": "lucy_got_problems",
+    "biome": "dark_forest",
+    "skyColor": "#2d5a27",
+    "fogColor": "#1a3d12",
+    "waterColor": "#1a6b3a",
+    "grassColor": "#3a8f3a",
+    "ambientLight": 0.4,
+    "hasCeiling": false,
+    "natural": true,
+    "portalFrameBlock": "minecraft:mossy_stone_bricks",
+    "portalIgniter": "succubus_scroll",
+    "musicSource": "lucy_got_problems",
+    "description": "A mystical elven forest from Lucy Got Problems"
+  }
+]

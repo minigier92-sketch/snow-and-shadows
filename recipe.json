@@ -1,0 +1,38 @@
+{
+  "slug": "snow-and-shadows",
+  "title": "Snow & Shadows: Chasing Tails x Lucy",
+  "description": "Mashup bringing Chasing Tails -A Promise in the Snow- and Lucy Got Problems into Minecraft! Explore Snow Town and the Elven Forest, interact with June, Rin, Lucy, Ellie, and Thea in fully rendered 2D, and collect custom items.",
+  "games": [
+    {
+      "slug": "minecraft-java",
+      "mode": "primary"
+    },
+    {
+      "slug": "chasing-tails",
+      "mode": "secondary",
+      "optional": false
+    },
+    {
+      "slug": "lucy-got-problems",
+      "mode": "secondary",
+      "optional": false
+    }
+  ],
+  "version": "0.1.0",
+  "tagline": "Explore two new dimensions and meet 5 VN characters with original art and music.",
+  "files": [
+    {
+      "id": "main",
+      "url": "build/libs/snow-and-shadows-0.1.0.jar",
+      "required": true
+    }
+  ],
+  "installs": [
+    {
+      "file": "main",
+      "path": "{managed}/Prism/instances/SnowAndShadows/.minecraft/mods/snow-and-shadows-0.1.0.jar",
+      "extract": false
+    }
+  ],
+  "launch": "{managed}/Prism/prismlauncher.exe --launch SnowAndShadows"
+}

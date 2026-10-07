@@ -1,0 +1,11 @@
+.gradle/
+.gradle_home/
+build/
+run/
+.idea/
+*.iml
+bin/
+*.zip
+*.jar
+
+*.hprof
