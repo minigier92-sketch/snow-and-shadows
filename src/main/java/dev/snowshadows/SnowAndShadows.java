@@ -13,6 +13,12 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.minecraft.block.Blocks;
+import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
+import net.fabricmc.fabric.api.dimension.v1.FabricDimensions;
+import net.minecraft.world.TeleportTarget;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -39,11 +45,25 @@ public class SnowAndShadows implements ModInitializer {
             var item = player.getStackInHand(hand).getItem();
             
             if (state.isOf(Blocks.PACKED_ICE) && item == ItemRegistry.GHOST_LANTERN) {
-                player.sendMessage(Text.literal("§b[Snow & Shadows] §fВрата в Snow Town активированы!"), false);
+                player.sendMessage(Text.literal("§b[Snow & Shadows] §fТелепортация в Snow Town..."), false);
+                
+                if (player instanceof ServerPlayerEntity serverPlayer) {
+                    RegistryKey<net.minecraft.world.World> destKey = RegistryKey.of(RegistryKeys.WORLD, new Identifier(MOD_ID, "snow_town"));
+                    ServerWorld destWorld = serverPlayer.getServer().getWorld(destKey);
+                    
+                    if (destWorld != null) {
+                        FabricDimensions.teleport(serverPlayer, destWorld, new TeleportTarget(
+                            player.getPos().add(0, 1, 0), 
+                            player.getVelocity(), 
+                            player.getYaw(), 
+                            player.getPitch()
+                        ));
+                    }
+                }
                 return ActionResult.SUCCESS;
             }
             if (state.isOf(Blocks.MOSSY_STONE_BRICKS) && item == ItemRegistry.SUCCUBUS_SCROLL) {
-                player.sendMessage(Text.literal("§a[Snow & Shadows] §fВрата в Elven Forest активированы!"), false);
+                player.sendMessage(Text.literal("§a[Snow & Shadows] §fВрата в Elven Forest пока находятся в разработке!"), false);
                 return ActionResult.SUCCESS;
             }
             return ActionResult.PASS;
